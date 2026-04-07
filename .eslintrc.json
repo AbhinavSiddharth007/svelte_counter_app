@@ -8,9 +8,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended", "prettier"],
+  "extends": ["eslint:recommended", "prettier", "plugin:storybook/recommended"],
   "plugins": ["svelte"],
-  "ignorePatterns": [".svelte-kit/", "build/"],
+  "ignorePatterns": [
+    ".svelte-kit/",
+    "build/",
+    ".storybook/",
+    "src/stories/",
+    "playwright-report/",
+    "test-results/"
+  ],
   "overrides": [
     {
       "files": ["*.svelte", "**/*.svelte"],
